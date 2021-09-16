@@ -10,7 +10,7 @@ name: lint-project
 
 jobs:
   lint-project:
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -20,9 +20,9 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install lintr
-        run: install.packages("lintr", repo="http://cran.rstudio.com/")
-        shell: Rscript {0}
+      - uses: r-lib/actions/setup-r-dependencies@v1
+        with:
+          extra-packages: lintr
 
       - name: Lint root directory
         run: lintr::lint_dir()
