@@ -1,0 +1,1 @@
+source('lintr/lint.R')

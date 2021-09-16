@@ -8,13 +8,23 @@ output: github_document
 ### Load packages and data
 
 ```{r load-packages, message = FALSE}
-library(tidyverse) 
-library(dsbox) 
+library(tidyverse)
+library(dsbox)
 ```
 
 ```{r load-data, message = FALSE}
-states <- read_csv("data/states.csv")
+states = read_csv("data/states.csv")
 ```
+
+### Exercise 0
+
+```{r lintr-warm-up}
+print("Here is an incredible, extreme, terrible, exceptional, great, impressive, awesome, no good, very long line in a code chunk.")
+Bad.Variable.Name = 0
+bad_boolean = T
+bad_spacing=sqrt(4*4)
+```
+
 
 ### Exercise 1
 
@@ -36,7 +46,9 @@ Do not use spaces in code chunk labels.
 
 ### Exercise 4
 
-...
+Here is an incredibly, extremely, terribly, exceptionally, greatly, impressively, awesomely, no good, very long line in the prose.
+
+
 
 ### Exercise 5
 
