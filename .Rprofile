@@ -1,1 +1,1 @@
-#source('lintr/lint.R')
+source('lintr/lint.R')
