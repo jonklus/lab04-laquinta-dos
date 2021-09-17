@@ -19,12 +19,13 @@ states = read_csv("data/states.csv")
 ### Exercise 0
 
 ```{r lintr-warm-up}
-print("Here is an incredible, extreme, terrible, exceptional, great, impressive, awesome, no good, very long line in a code chunk.")
+print("Here is an incredible, grandiloquent, extreme, terrible, verbose, lengthy, awesome-in-the-original-sense, no good and very long line (of code).")
 Bad.Variable.Name = 0
-bad_boolean = T
-bad_spacing=sqrt(4*4)
+this_is_a_bad_boolean = T
+needs_infix_spacing=1*0^0
+this = mtcars %>% mutate(needs = mpg * wt) %>% mutate(to_have = hp / cyl) %>%
+  mutate(one = "pipe_step") %>% mutate(per = "line")
 ```
-
 
 ### Exercise 1
 
@@ -46,20 +47,20 @@ Do not use spaces in code chunk labels.
 
 ### Exercise 4
 
-Here is an incredibly, extremely, terribly, exceptionally, greatly, impressively, awesomely, no good, very long line in the prose.
-
+...
 
 
 ### Exercise 5
+
+
+### Exercise 6
 
 ```{r load-haversine}
 source("haversine.R")
 ```
 
-...Add chunks and description for Ex 5.
-
-### Exercise 6
+...Add additional chunks and description for Ex 6 as needed.
 
 ...
 
-Add exercise headings as needed.
+Add more exercise headings, chunks, etc, as needed.
