@@ -17,10 +17,10 @@ states = read_csv("data/states.csv")
 ### Exercise 0
 
 ``` r
-print("Here is an incredible, grandiloquent, extreme, terrible, verbose, lengthy, awesome-in-the-original-sense, no good and very long line (of code).")
+str_c("Here is an incredible, grandiloquent,", "extreme, terrible, verbose, lengthy, awesome-in-the-original-sense,", "no good and very long line (of code).")
 ```
 
-    ## [1] "Here is an incredible, grandiloquent, extreme, terrible, verbose, lengthy, awesome-in-the-original-sense, no good and very long line (of code)."
+    ## [1] "Here is an incredible, grandiloquent,extreme, terrible, verbose, lengthy, awesome-in-the-original-sense,no good and very long line (of code)."
 
 ``` r
 Bad.Variable.Name = 0
