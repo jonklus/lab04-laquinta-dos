@@ -1,7 +1,7 @@
 ---
 title: "Lab 04 - La Quinta is Spanish for next to Denny's, Pt. 2"
-author: "Insert your name here"
-date: "Insert date here"
+author: "Jonathan Klus"
+date: "21 September 2021"
 output: github_document
 ---
 
@@ -19,27 +19,36 @@ states = read_csv("data/states.csv")
 ### Exercise 0
 
 ```{r lintr-warm-up}
-str_c("Here is an incredible, grandiloquent,", "extreme, terrible, verbose, lengthy, awesome-in-the-original-sense,", "no good and very long line (of code).")
-Bad.Variable.Name = 0
-this_is_a_bad_boolean = T
-needs_infix_spacing=1*0^0
-this = mtcars %>% mutate(needs = mpg * wt) %>% mutate(to_have = hp / cyl) %>%
-  mutate(one = "pipe_step") %>% mutate(per = "line")
+
+str_c("Here is an incredible, grandiloquent,", 
+      "extreme, terrible, verbose, lengthy, awesome-in-the-original-sense,", 
+      "no good and very long line (of code).")
+
+better_variable_name = 0
+this_is_a_bad_boolean = TRUE
+needs_infix_spacing = 1 * 0^0
+this = mtcars %>% 
+  mutate(needs = mpg * wt) %>% 
+  mutate(to_have = hp / cyl) %>%
+  mutate(one = "pipe_step") %>% 
+  mutate(per = "line")
 ```
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here.
-Add code chunks as needed.
-Don't forget to label your code chunk.
-Do not use spaces in code chunk labels.
+```{r}
+lint_assignment()
+```
+
 
 ### Exercise 2
 
-Remove this text, and add your answer for Exercise 1 here.
-Add code chunks as needed.
-Don't forget to label your code chunk.
-Do not use spaces in code chunk labels.
+```{r}
+dn_ak = dennys %>%
+  dplyr::filter(state == "AK")
+```
+
+There are `r nrow(dn_ak)` Dennys locations in Alaska. 
 
 ### Exercise 3
 
